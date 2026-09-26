@@ -45,3 +45,4 @@ yarn-error.*
 build.log
 android/
 ios/
+metro.log

@@ -129,8 +129,11 @@ function labelOf(domain: string): string {
 function lookalikeOf(reg: string): { brand: string; real: string } | undefined {
   const label = labelOf(reg);
   const sk = skeleton(label);
+  const tld = reg.split('.').pop();
   for (const b of BRANDS) {
-    for (const d of b.domains) {
+    // Compare against the brand's domain with the same ending first, so "discorcl.gift" is shown next to "discord.gift".
+    const domains = [...b.domains].sort((x, y) => Number(y.endsWith('.' + tld)) - Number(x.endsWith('.' + tld)));
+    for (const d of domains) {
       const real = labelOf(d);
       if (real.length < 4 || label === real) continue;
       const realSk = skeleton(real);

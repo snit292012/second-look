@@ -68,6 +68,10 @@ describe('link tools', () => {
       expect(analyseUrl(u)).toEqual([]);
     }
   });
+  it('names the real site being copied', () => {
+    expect(analyseUrl('discorcl.gift/x')[0].reason).toMatch(/NOT discord\.gift/);
+    expect(analyseUrl('steamcommunnity.com/x')[0].reason).toMatch(/NOT steamcommunity\.com/);
+  });
   it('flags a shortener but not as a full scam on its own', () => {
     expect(verdict('https://bit.ly/3xYz')).toBe('clear');
     expect(check('https://bit.ly/3xYz').flags.length).toBe(1);
