@@ -26,6 +26,8 @@ function combine(weights: number[]): number {
   return Math.round((1 - keep) * 100);
 }
 
+const clip = (s: string) => (s.length > 60 ? s.slice(0, 57).trimEnd() + '…' : s);
+
 export function check(text: string): CheckResult {
   const input = text.normalize('NFKC');
   const flags: Flag[] = [];
@@ -40,7 +42,7 @@ export function check(text: string): CheckResult {
       const m = input.match(re);
       if (m) {
         matched.add(rule.id);
-        flags.push({ kind: 'message', id: rule.id, weight: rule.weight, reason: rule.reason, advice: rule.advice, evidence: m[0] });
+        flags.push({ kind: 'message', id: rule.id, weight: rule.weight, reason: rule.reason, advice: rule.advice, evidence: clip(m[0]) });
         break;
       }
     }
