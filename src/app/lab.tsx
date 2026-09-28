@@ -27,7 +27,8 @@ export default function Lab() {
   }, []);
 
   const card = deck[i % deck.length];
-  const locked = !pro && playedToday >= FREE_ROUNDS;
+  // Lock only between rounds, so the explanation for the last free answer is still shown.
+  const locked = !pro && playedToday >= FREE_ROUNDS && picked === null;
   const lesson = useMemo(() => check(card.text), [card]);
 
   const answer = async (saysScam: boolean) => {
@@ -53,7 +54,7 @@ export default function Lab() {
         <Text style={s.big}>🧪</Text>
         <Text style={s.title}>That's today's 3 free rounds</Text>
         <Text style={s.sub}>
-          Pro unlocks unlimited Scam Lab, your check history, and supports keeping Second Look free for every teen who just needs a quick check.
+          Pro unlocks unlimited Scam Lab, your check history, and supports keeping Second Look free for everyone who just needs a quick check.
         </Text>
         <Pressable testID="unlock" style={[s.btn, { backgroundColor: C.accent, alignSelf: 'stretch' }]} onPress={unlockPro}>
           <Text style={s.btnText}>Unlock Scam Lab</Text>
