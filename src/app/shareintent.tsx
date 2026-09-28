@@ -8,7 +8,7 @@ import { addHistory } from '../lib/history';
 import { usePro } from '../lib/purchases';
 import { C } from '../lib/theme';
 
-// Opened when someone shares a message or link to SusCheck from another app.
+// Opened when someone shares a message or link to Second Look from another app.
 export default function SharedResult() {
   const router = useRouter();
   const { shareIntent, resetShareIntent } = useShareIntentContext();

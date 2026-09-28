@@ -4,7 +4,7 @@ import type { Verdict } from '../engine/check';
 
 export type HistoryItem = { at: number; text: string; verdict: Verdict; score: number };
 
-const KEY = 'suscheck.history.v1';
+const KEY = 'secondlook.history.v1';
 const MAX = 100;
 
 export async function loadHistory(): Promise<HistoryItem[]> {

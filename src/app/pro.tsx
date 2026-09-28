@@ -3,7 +3,7 @@ import { manageSubscription, purchasesReady, restore, unlockPro, usePro } from '
 import { C } from '../lib/theme';
 
 const FREE = ['Unlimited message and link checks', 'Share-to-check from any app', 'Help screen for threats and sextortion'];
-const PRO = ['Unlimited Scam Lab training', 'Check history on your phone', 'Keeps SusCheck free for everyone else'];
+const PRO = ['Unlimited Scam Lab training', 'Check history on your phone', 'Keeps Second Look free for everyone else'];
 
 export default function Pro() {
   const { pro } = usePro();

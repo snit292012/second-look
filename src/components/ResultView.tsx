@@ -15,8 +15,8 @@ export function ResultView({ text, result, onAgain }: { text: string; result: Ch
     Share.share({
       message:
         result.verdict === 'clear'
-          ? 'I checked a message with SusCheck before replying. Check yours too.'
-          : `Heads up: I got a ${v.label.toLowerCase()} message. ${result.flags[0]?.reason ?? ''} Don't click links like this. (Checked with SusCheck)`,
+          ? 'I checked a message with Second Look before replying. Check yours too.'
+          : `Heads up: I got a ${v.label.toLowerCase()} message. ${result.flags[0]?.reason ?? ''} Don't click links like this. (Checked with Second Look)`,
     });
 
   return (

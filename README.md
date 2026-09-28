@@ -1,19 +1,21 @@
-# SusCheck — is this message a scam?
+# Second Look — is this message a scam?
 
 **Paste or share any DM, text or link. Get an instant verdict — ✅ No red flags · 🤨 Sus · 🚩 Scam — with the reasons in plain words and what to do next.**
 
-Built by a 14-year-old in the UK for the scams that actually hit people my age: free Nitro / Robux / V-Bucks, fake Steam
-"I reported you by accident" messages, look-alike links (`discorcl.gift`, `steamcommunnity.com`), fake parcel and HMRC texts,
-"Hi Mum, new number", money-mule "easy money" offers, and sextortion threats.
+Built by a 14-year-old in the UK. I'm the one my family forwards every weird text to — *"is this real?"* — so I built the
+answer into an app. It covers the scams that hit **everyone in the house**: fake Royal Mail / Evri parcel fees, HMRC refunds,
+"Hi Mum, this is my new number", look-alike bank and shop links — and the ones aimed at people my age: free Nitro / Robux /
+V-Bucks, fake Steam "I reported you by accident" messages, look-alike links (`discorcl.gift`, `steamcommunnity.com`),
+money-mule "easy money" offers and sextortion threats.
 
 - 🔒 **Private by design.** Every check runs on the phone. No server, no AI API, nothing is uploaded.
-- 📤 **Share-to-check.** Long-press a message in Discord, WhatsApp or Messages → Share → SusCheck.
+- 📤 **Share-to-check.** Long-press a message in Discord, WhatsApp or Messages → Share → Second Look.
 - 🛟 **Help, not just a score.** Threats to leak images go straight to a help screen: Childline (0800 1111), Report Remove and CEOP.
 - 🧪 **Scam Lab.** A swipe game — scam or legit? — built on the same engine, so every answer teaches the real warning sign.
 
 ## How RevenueCat is used
 
-Checking is **free forever** — a safety tool shouldn't have a paywall. RevenueCat powers **SusCheck Pro**:
+Checking is **free forever** — a safety tool shouldn't have a paywall. RevenueCat powers **Second Look Pro**:
 
 | | |
 |---|---|

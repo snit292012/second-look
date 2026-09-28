@@ -7,7 +7,7 @@ import { unlockPro, usePro } from '../lib/purchases';
 import { C, VERDICT } from '../lib/theme';
 
 const FREE_ROUNDS = 3;
-const todayKey = () => `suscheck.lab.${new Date().toISOString().slice(0, 10)}`;
+const todayKey = () => `secondlook.lab.${new Date().toISOString().slice(0, 10)}`;
 
 function shuffled<T>(xs: T[]) {
   return [...xs].sort(() => Math.random() - 0.5);
@@ -53,7 +53,7 @@ export default function Lab() {
         <Text style={s.big}>🧪</Text>
         <Text style={s.title}>That's today's 3 free rounds</Text>
         <Text style={s.sub}>
-          Pro unlocks unlimited Scam Lab, your check history, and supports keeping SusCheck free for every teen who just needs a quick check.
+          Pro unlocks unlimited Scam Lab, your check history, and supports keeping Second Look free for every teen who just needs a quick check.
         </Text>
         <Pressable testID="unlock" style={[s.btn, { backgroundColor: C.accent, alignSelf: 'stretch' }]} onPress={unlockPro}>
           <Text style={s.btnText}>Unlock Scam Lab</Text>

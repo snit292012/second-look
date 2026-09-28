@@ -7,9 +7,9 @@ import { usePro } from '../lib/purchases';
 import { C } from '../lib/theme';
 
 const EXAMPLES = [
-  'bro free nitro before it runs out 🎁 discorcl.gift/n1tro',
-  'Hey sorry I accidentally reported your account, add the steam admin on discord to fix it before you get banned',
   'Royal Mail: your parcel is held due to an unpaid fee of £1.45. Pay here: royalmail-reschedule.com',
+  'Hi Mum, this is my new number, lost my phone. Can you send £150? Urgent',
+  'bro free nitro before it runs out 🎁 discorcl.gift/n1tro',
 ];
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
     <KeyboardAvoidingView style={{ flex: 1 }} behavior="padding">
       <ScrollView contentContainerStyle={s.wrap} keyboardShouldPersistTaps="handled">
         <Text style={s.title}>Is this message a scam?</Text>
-        <Text style={s.sub}>Paste a DM, text or link. Or share it straight to SusCheck from Discord, WhatsApp or Messages.</Text>
+        <Text style={s.sub}>Paste a text, DM or link, or share it straight here from Messages, WhatsApp or Discord. For you, your mates and your family.</Text>
 
         <TextInput
           testID="input"

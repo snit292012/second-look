@@ -20,12 +20,12 @@ export default function Layout() {
           headerTitleStyle: { fontWeight: '800' },
         }}
       >
-        <Stack.Screen name="index" options={{ title: 'SusCheck' }} />
+        <Stack.Screen name="index" options={{ title: 'Second Look' }} />
         <Stack.Screen name="result" options={{ title: 'Result' }} />
         <Stack.Screen name="shareintent" options={{ title: 'Result' }} />
         <Stack.Screen name="lab" options={{ title: 'Scam Lab' }} />
         <Stack.Screen name="history" options={{ title: 'History' }} />
-        <Stack.Screen name="pro" options={{ title: 'SusCheck Pro' }} />
+        <Stack.Screen name="pro" options={{ title: 'Second Look Pro' }} />
       </Stack>
     </ShareIntentProvider>
   );
